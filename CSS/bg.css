@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+.frame{
+	height:1236px;
+	width:103%;
+	position:absolute;left: -3%; top: -3%;
+	overflow:hidden;
+	background-image: url(../images/background.jpg);
+	background-position: center top;
+	opacity: 0.5;
+	z-index:-1;
+}
+
+.rain{
+	height:200%;
+	width:200%;
+	position: absolute;left: -50%; top: -50%; right: -50%; bottom: -50%;
+	overflow: hidden;
+
+	z-index:0;
+	
+	background-image: url(../images/snow.png);
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	
+}
+.rain.rain1{
+	background-size: 100px;
+	transform: rotate(15deg);
+	animation-duration: 9s;
+	animation-name: rain1;
+}
+
+.rain.rain2{
+	transform: rotate(15deg);
+	animation-duration: 18s;
+	animation-name: rain2;
+}
+/*IE*/
+@-webkit-keyframes rain1 {
+    from { background-position: 0 0px; }
+    to { background-position: 0 100%; }
+}
+@-webkit-keyframes rain2 {
+	from { background-position: 0 0px; }
+	to { background-position: 10% 100%; }
+}
+/*Chrome*/
+@keyframes rain1 {
+	from { background-position: 0 0px; }
+	to { background-position: 0 100%;}
+}
+@keyframes rain2 {
+	from { background-position: 0 0px; }
+	to { background-position: 10% 100%; }
+}

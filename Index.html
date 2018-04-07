@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="./CSS/bg.css">
+    <link rel="stylesheet" href="CSS/TopNavCSS.css">
+
+	<title id="title">子玄</title>
+    <link rel="icon" type="image/png" href="/images/icon.png"/>
+
+    <script>
+        function changePage(Class,page) {
+            document.getElementById("title").innerHTML='子玄 -'  + Class;
+            document.getElementById("mainFrame").src ='class/'+page+'/index.html';
+        }
+    </script>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="rain rain1"></div>
+      <div class="rain rain2"></div>
+    </div>
+    <div class="top">
+      <div class="top-left">
+        <div class="top-left-1">
+          <ul class="ul top">
+            <li class="block"><a href="#" style="letter-spacing: 8px;font-size: 32px;">≡ 課程內容</a>
+              <div class="record">
+                <br>
+                <a onclick="changePage('正餘弦函數', 1)">正餘弦函數</a><br><br>
+                <a onclick="changePage('初探電子學', 2)">初探電子學</a><br><br>
+                <a onclick="changePage('電源供應器', 3)">電源供應器</a><br><br>
+                <a onclick="changePage('電阻の世界', 4)">電阻の世界</a><br><br>
+                <a onclick="changePage('神奇二極體', 5)">神奇二極體</a><br><br>
+                <a onclick="changePage('引用圖來源',99)">引用圖來源</a><br><br>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="top-right">
+        <div class="top-right-1"> </div>
+      </div>
+    </div>
+    <iframe id="mainFrame" style="height:60%; width:100%; float:right" scrolling="no" src="" frameborder="0"></iframe>
+  </body>
+</html>
